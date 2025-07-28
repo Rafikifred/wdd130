@@ -1,0 +1,238 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #055a05;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
+  --heading-font: "Merriweather", serif;
+  --body-font: "Roboto", sans-serif;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Constrain the overall width of the page and center it on the screen */
+header,
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin: 16px 0;
+}
+
+/* Remove default list and margin spacing on navigation list */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 12px 0;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  color: var(--accent2-color);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+header nav li {
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Style the call‑to‑action article overlay */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(38, 70, 83, 0.85);
+  color: white;
+  padding: 16px;
+  max-width: 320px;
+  border-radius: 6px;
+}
+
+.hero article h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.hero article img {
+  float: right;
+  width: 80px;
+  height: auto;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.hero article p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+/* History Section */
+.history-section {
+  padding: 24px 0;
+}
+
+.history-section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+
+.history-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid var(--secondary-color);
+}
+
+.history-text p {
+  margin-bottom: 1rem;
+  color: var(--accent1-color);
+}
+
+/* Adventures Section */
+.adventures {
+  padding: 24px 0;
+}
+
+.adventures h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.adventure-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 2px solid var(--secondary-color);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--accent1-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  margin-top: 40px;
+  padding: 16px 0;
+  border-top: none;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+/* Social Media Icons */
+.socialmedia {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socialmedia a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 28px;
+  height: 28px;
+  /* maintain original icon colors for better contrast */
+  transition: transform 0.2s ease;
+}
+
+.socialmedia a:hover img {
+  transform: scale(1.1);
+}
