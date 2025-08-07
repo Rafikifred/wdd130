@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact White Water Rafting for inquiries, reservations, or website suggestions. Get in touch with our friendly team." />
+  <title>White Water Rafting | Contact Us</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/rafting logo.jpg" alt="Rafting Site Logo" />
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="company-info">
+      <h1>Contact Us</h1>
+      <p><strong>Address:</strong> 123 River Run Rd, Rapids City, RC 45678</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> info@raftingadventures.com</p>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.948229420952!2d-122.08424968469276!3d37.42206577982559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0a6e91b59f1%3A0x2c6f5d3ea5d5cf43!2sGoogleplex!5e0!3m2!1sen!2sus!4v1690735123456"
+        width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="grid-content">
+        <figure>
+          <img src="images/employee1.jpeg" alt="Smiling woman - Reservation Specialist">
+          <figcaption>Jane Doe – Reservation Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpeg" alt="Rafting guide smiling">
+          <figcaption>John Smith – Rafting Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpeg" alt="Customer service agent smiling">
+          <figcaption>Emily Rivers – Customer Support</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting | <a href="contact.html">Contact Us</a></p>
+    <p><a href="images/contact-wireframe.jpg">View Contact Page Wireframe</a></p>
+  </footer>
+</body>
+</html>
